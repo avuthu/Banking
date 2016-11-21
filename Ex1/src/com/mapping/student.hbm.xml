@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.model.StudentBean" table="student2">
+		
+		<id name="sid" column = "sid" type="integer" length="10">
+			<generator class="assigned"></generator>
+		</id>
+
+		<property name="sname" column="sname" type="string" length="15"/>
+		
+		<property name="sage" column = "sage" type="integer" length="3"/>
+		
+		<property name="saddr" column = "saddr" type="string" length="15"/>
+		
+	</class>
+	
+</hibernate-mapping>
